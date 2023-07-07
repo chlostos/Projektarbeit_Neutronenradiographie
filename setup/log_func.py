@@ -1,4 +1,4 @@
-from setup import logger
+from setup.initialize import logger
 
 
 def log_func(func, log=logger, level="debug", arguments=True):
