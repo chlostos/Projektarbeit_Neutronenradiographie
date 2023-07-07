@@ -16,7 +16,7 @@ logger: logging.Logger = logging_setup.init_logger(
     console_level=logging.INFO,  # available levels: DEBUG, INFO, WARNING, ERROR, CRITICAL
     file_level=logging.DEBUG,
     mail_handler=False)
-PROJECT_NAME = "python_frame_work"
+PROJECT_NAME = "Projektarbeit_Neutronenradiographie"
 
 # ensure that absolute paths are used in the config
 if config.has_section("DIRECTORIES"):

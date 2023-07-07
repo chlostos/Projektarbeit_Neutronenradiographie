@@ -9,8 +9,8 @@ import logging
 # all config parameters in [DIRECTORIES] and [FILES] are changed to absolute paths
 
 
-#config: configparser.ConfigParser = config_setup.get_prod_config()
-config: configparser.ConfigParser = config_setup.get_dev_config()
+config: configparser.ConfigParser = config_setup.get_prod_config()
+#config: configparser.ConfigParser = config_setup.get_dev_config()
 
 logger = logging_setup.init_logger(
     logger_name='project_logger',
@@ -21,7 +21,7 @@ logger = logging_setup.init_logger(
     mail_handler=False,
     error_mail_subject="[Project]",
     error_mail_recipient=config.get('MAIN', 'error_mail_recipient'))
-PROJECT_NAME = "project"
+PROJECT_NAME = "Projektarbeit_Neutronenradiographie"
 
 # ensure that absolute paths are used in the config
 for key, directory in config["DIRECTORIES"].items():
