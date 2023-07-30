@@ -6,7 +6,7 @@ beobachtete_werte = np.array([36382,23382,33300,33098,39325])
 #beobachtete_werte = np.array([8.6, 7.6, 8.1, 8.0, 9.1, 8.7, 8.3])
 i = 0
 p = []
-while i < 10000:
+while i < 100:
     # Lambda-Wert für die Poisson-Verteilung
     lambda_value = 33000
 
